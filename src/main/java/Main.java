@@ -17,7 +17,8 @@ public class Main {
         while (!limiteAlcanzado) {
             for (EdgeNode edge : edges) {
                 edge.enviarDato();
-                                for (FogNode f : fogs) {
+
+                for (FogNode f : fogs) {
                     if (f.getContadorAltas() >= 20) {
                         limiteAlcanzado = true;
                         System.out.println("\nLimite de 20 temperaturas altas alcanzado en FOG " + f.getIdFog());
